@@ -11,3 +11,6 @@ class PageController extends Controller
         return view('welcome');
     }
 }
+
+
+// php artisan make:migration create_trains_table
