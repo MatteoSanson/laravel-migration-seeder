@@ -30,7 +30,7 @@
                                     <div class="col-md-8">
                                         <p><strong>Partenza:</strong> {{ $train['stazione_partenza'] }}</p>
                                     </div>
-                                    <div class="col-md-4 text-right">
+                                    <div class="col-md-4 d-flex justify-content-end">
                                         <p><strong>Codice-Treno:</strong> {{ $train['codice_treno'] }}</p>
                                     </div>
                                 </div>
@@ -40,28 +40,31 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <p><strong>Data Partenza:</strong> {{ $train['giorno_partenza'] }}
                                             <strong>ore:</strong> {{ $train['orario_partenza'] }}
                                         </p>
                                     </div>
-                                    <div class="col-md-3 text-right">
+                                    <div class="col-md-4 d-flex justify-content-end">
                                         <p><strong>N carrozze:</strong> {{ $train['n_carrozze'] }}</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <p><strong>Data Arrivo:</strong> {{ $train['giorno_arrivo'] }}
                                             <strong>ore:</strong> {{ $train['orario_arrivo'] }}
                                         </p>
                                     </div>
+                                    <div class="col-md-4 d-flex justify-content-end">
+                                        <p><strong>Binario d'arrivo:</strong> {{ $train['binario_arrivo'] }}</p>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p class="text-center"><strong>In Orario:</strong>
+                                    <div class="col-md-6 text-center">
+                                        <p><strong>In Orario:</strong>
                                             {{ $train['in_orario'] ? 'Si' : 'No' }}</p>
                                     </div>
-                                    <div class="col-md-6 text-center">
+                                    <div class="col-md-6">
                                         <p><strong>Cancellato:</strong> {{ $train['cancellato'] ? 'Si' : 'No' }}</p>
                                     </div>
                                 </div>
