@@ -23,7 +23,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h5 class="card-title text-right">Biglietto {{ $train['azienda'] }}</h5>
+                                <h5 class="card-title text-right">{{ $train['azienda'] }}</h5>
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <div class="row">
